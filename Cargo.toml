@@ -1,0 +1,14 @@
+workspace = { members = [ "bye","hello"] }
+
+[package]
+name = "app-hello"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lib-hello = { version = "0.3.0", features = ["communication"] }
+hello = {path = "hello"}
+
+[dev-dependencies]
+uuid = { version = "1.8.0", features = ["v4"] }
+bye = {path = "bye"}
